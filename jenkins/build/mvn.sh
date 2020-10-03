@@ -2,6 +2,6 @@
 echo "****************"
 echo "* Building jar!*"
 echo "****************"
-
-PROJ=/home/ricardo/jenkins/jenkins_home/workspace/pipeline-docker-maven
-docker run --rm -v /root/.m2:/root/.m2 -v $PWD/java-app:/app -w /app maven:3-alpine "$@"
+echo  $PROJ
+PROJ=/home/tsoft/jenkins/pipeline
+docker run --rm -v /root/.m2:/root/.m2 -v /home/tsoft/jenkins/pipeline/java-app:/app -w /app maven:3-alpine "$@"
