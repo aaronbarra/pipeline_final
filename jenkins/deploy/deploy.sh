@@ -1,5 +1,6 @@
 #!/bin/bash
 # Generamos
+
 echo app > /tmp/.auth 
 echo $BUILD_TAG >> /tmp/.auth 
 
