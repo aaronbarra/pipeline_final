@@ -2,7 +2,7 @@
 echo "########################"
 echo "*** Preparing to push ***"
 echo "########################"
-REGISTRY="ec2-18-191-178-221.us-east-2.compute.amazonaws.com:5000"
+REGISTRY="ec2-3-137-174-128.us-east-2.compute.amazonaws.com:5000"
 IMAGE="centos" 
 echo "*** Tagging image ***"
 docker tag $IMAGE:$BUILD_TAG $REGISTRY/$IMAGE:$BUILD_TAG
