@@ -1,4 +1,5 @@
 #!/bin/bash
+export BUILD_TAG=12
 echo "########################"
 echo "*** Preparing to push ***"
 echo "########################"
