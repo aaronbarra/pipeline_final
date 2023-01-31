@@ -32,7 +32,7 @@ pipeline {
             steps {
 		script {
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-                        docker.image("aaronbarra/app:{$BUILD_ID}").push()
+                        docker.image("aaronbarra/app:latest").push()
                     }
                 }
             }
