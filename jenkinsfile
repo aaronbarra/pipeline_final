@@ -31,7 +31,7 @@ pipeline {
         stage('Push') {
             steps {
 		script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+                    docker.withRegistry('https://registry.hub.docker.com/aarobarra', 'dockerhub') {
 		    	docker.image("app:"+env.BUILD_ID).push()
                     }
                 }
