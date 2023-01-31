@@ -30,7 +30,12 @@ pipeline {
         }
         stage('Push') {
             steps {
-		sh './jenkins/push/push.sh'
+		script {
+                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+                        docker.image("aaronbarra/app:${TAG}").push()
+                        docker.image("aaronbarra/app:${TAG}").push("latest")
+                    }
+                }
             }
         }
         stage('Deploy') {
