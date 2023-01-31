@@ -3,7 +3,7 @@ echo "########################"
 echo "*** Preparing to push ***"
 echo "########################"
 REGISTRY="https://registry.hub.docker.com/aaronbarra/jenkinspipeline"
-IMAGE="app" 
+IMAGE="jenkinspipeline" 
 echo "*** Tagging image ***"
 docker tag $IMAGE:$BUILD_TAG $REGISTRY/$IMAGE:$BUILD_TAG
 echo "*** Pushing image ***"
