@@ -8,7 +8,6 @@ pipeline {
                 sh '''
 		        whoami
 			chmod -R +x *
-			npm install
 			./jenkins/build/mvn.sh -B -DskipTests clean package
                         ./jenkins/build/build.sh 
                     '''   
