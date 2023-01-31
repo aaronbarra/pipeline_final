@@ -2,7 +2,7 @@
 echo "########################"
 echo "*** Preparing to push ***"
 echo "########################"
-REGISTRY="registry.hub.docker.com/"
+REGISTRY="registry.hub.docker.com"
 IMAGE="app"
 BUILD_ID=$BUILD_ID
 echo "*** Tagging image ***"
