@@ -32,8 +32,7 @@ pipeline {
             steps {
 		script {
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-		    	docker login -u “aaronbarra” -p “dckr_pat_03WCgLiefE1LCa7bUsiebtfAXRE” docker.io
-                        docker.image("app:"+env.BUILD_ID).push()
+		    	docker.image("app:"+env.BUILD_ID).push()
                     }
                 }
             }
