@@ -4,7 +4,7 @@ echo "*** Preparing to push ***"
 echo "########################"
 REGISTRY="https://registry.hub.docker.com/aaronbarra/"
 IMAGE="app"
-BUILD_ID=env.BUILD_ID
+BUILD_ID=env.$BUILD_ID
 echo "*** Tagging image ***"
 docker tag $IMAGE:$BUILD_TAG $REGISTRY/$IMAGE:$BUILD_ID
 echo "*** Pushing image ***"
