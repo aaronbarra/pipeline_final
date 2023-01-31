@@ -3,7 +3,7 @@ export BUILD_TAG=12
 echo "########################"
 echo "*** Preparing to push ***"
 echo "########################"
-REGISTRY="https://registry.hub.docker.com/aaronbarra"
+REGISTRY="https://registry.hub.docker.com/aaronbarra/jenkinspipeline"
 IMAGE="app" 
 echo "*** Tagging image ***"
 docker tag $IMAGE:$BUILD_TAG $REGISTRY/$IMAGE:$BUILD_TAG
